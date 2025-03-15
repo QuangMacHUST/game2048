@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game 2048</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>2048</h1>
+            <div class="score-container">
+                <div class="score-box">
+                    <div class="title">Điểm</div>
+                    <div id="score">0</div>
+                </div>
+                <div class="score-box">
+                    <div class="title">Cao nhất</div>
+                    <div id="best-score">0</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sub-header">
+            <div class="game-intro">
+                <p>Ghép các ô số giống nhau và đạt đến ô <strong>2048</strong>!</p>
+            </div>
+            <button id="new-game-btn">Trò chơi mới</button>
+        </div>
+
+        <div class="game-container">
+            <div class="game-message">
+                <p></p>
+                <div class="lower">
+                    <button id="retry-btn">Thử lại</button>
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+            </div>
+
+            <div class="tile-container" id="tile-container">
+                <!-- Các ô số sẽ được thêm vào đây bằng JavaScript -->
+            </div>
+        </div>
+
+        <div class="game-explanation">
+            <p><strong>Hướng dẫn:</strong> Sử dụng các phím <strong>↑ ← ↓ →</strong> để di chuyển các ô. Khi hai ô có cùng giá trị chạm vào nhau, chúng sẽ <strong>kết hợp thành một ô mới</strong>!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Game 2048 - Đây là một bản sao của <a href="https://play2048.co" target="_blank">2048 gốc</a> bởi Gabriele Cirulli.</p>
+    </footer>
+
+    <script src="js/game.js"></script>
+</body>
+</html> 
